@@ -1,10 +1,11 @@
-// Computer.cpp
 #include "Computer.h"
 
+Computer::Computer() : name("Computer") {}
+
 char Computer::makeMove() {
-    return 'R';  // Always plays Rock
+    return 'R';
 }
 
-string Computer::getName() {
-    return "Computer";
+std::string Computer::getName() {
+    return name;
 }

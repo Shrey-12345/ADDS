@@ -1,16 +1,17 @@
-// Human.h
 #ifndef HUMAN_H
 #define HUMAN_H
+
+#include <string>
 #include "Player.h"
 
 class Human : public Player {
 private:
-    string name;
+    std::string name;
+
 public:
-    Human::Human();
-    Human::Human(std::string)
+    Human(const std::string& name = "Human");
     char makeMove() override;
-    string getName() override;
+    std::string getName() override;
 };
 
 #endif
