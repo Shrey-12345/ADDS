@@ -7,8 +7,8 @@ class Human : public Player {
 private:
     string name;
 public:
-    Human();
-    Human(string n = "Human");
+    Human::Human();
+    Human::Human(std::string)
     char makeMove() override;
     string getName() override;
 };
