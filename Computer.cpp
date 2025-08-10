@@ -5,7 +5,7 @@
 Computer::Computer() : name("Computer") {}
 
 Move* Computer::makeMove() {
-    // For deterministic testing, cycle through moves in order
+    
     static const std::vector<std::string> moves = {
         "Rock", "Rock", "Rock", "Rock", "Rock", "Rock", "Rock", "Rock"
     };

@@ -25,7 +25,7 @@ std::string Move::getName() const {
 }
 
 bool Move::isValidMove(const std::string& moveName) {
-    // Strictly check exact match (case sensitive)
+    
     return std::find(allMoves.begin(), allMoves.end(), moveName) != allMoves.end();
 }
 
