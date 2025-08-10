@@ -1,17 +1,9 @@
 #include "Computer.h"
 #include "Move.h"
 #include <cstdlib>
-#include <ctime>
 #include <vector>
 
-static bool seeded = false;
-
-Computer::Computer() : name("Computer") {
-    if (!seeded) {
-        std::srand(static_cast<unsigned int>(std::time(nullptr)));
-        seeded = true;
-    }
-}
+Computer::Computer() : name("Computer") {}
 
 Move* Computer::makeMove() {
     static const std::vector<std::string> moves = {
