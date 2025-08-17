@@ -3,7 +3,6 @@
 
 class Truckloads {
 public:
-    // Recursive function to calculate trucks needed
     int numTrucks(int numCrates, int loadSize);
 };
 

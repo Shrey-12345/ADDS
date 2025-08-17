@@ -2,14 +2,13 @@
 
 int Truckloads::numTrucks(int numCrates, int loadSize) {
     if (numCrates <= 0 || loadSize <= 0) {
-        return 0; // error case
+        return 0;
     }
 
     if (numCrates <= loadSize) {
-        return 1; // one truck is enough
+        return 1;
     }
 
-    // split crates into two piles
     int leftPile = numCrates / 2;
     int rightPile = numCrates - leftPile;
 
