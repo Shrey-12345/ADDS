@@ -1,4 +1,3 @@
-// Heap.tpp
 #include <stdexcept>
 
 // Insert a new element into the heap
